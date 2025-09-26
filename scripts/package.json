@@ -1,0 +1,21 @@
+{
+  "name": "cs2-fantasy-etl",
+  "version": "1.0.0",
+  "description": "ETL system for CS2 Fantasy app player data",
+  "type": "module",
+  "scripts": {
+    "scrape": "node scrape-players.js",
+    "update": "node update-mock-data.js",
+    "full-update": "npm run scrape && npm run update",
+    "setup": "mkdir -p data logs && npm install"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "cheerio": "^1.0.0-rc.12",
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  }
+}
