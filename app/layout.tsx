@@ -1,13 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
 import "./globals.css"
 import { LanguageProvider } from "@/contexts/language-context"
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-})
 
 export const metadata: Metadata = {
   title: "Fantasy CS2",
@@ -21,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} antialiased`}>
+    <html lang="en" className="antialiased">
       <body className="min-h-screen bg-background text-foreground">
         <div suppressHydrationWarning>
           <LanguageProvider>{children}</LanguageProvider>
