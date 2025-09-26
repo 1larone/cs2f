@@ -6326,4 +6326,7 @@ export const mockPlayers: Player[] = [
       supportRounds: 10.8,
       awpKillsPerRound: 0.30,
       entrySuccess: 54.3,
-      tradingSuccess: 6
+      tradingSuccess: 6.0
+    }
+  }
+]
